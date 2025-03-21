@@ -12,11 +12,7 @@ contract Test {
         require(_to != address(this));
       assert(xPost == xPre - _amt);
  TokenCorrect t = TokenCorrect(_token);  
-contract TokenCorrect is Token {
-    mapping (address => uint) balance;
-    constructor(address _a, uint _b) {
-    function balanceOf(address _a) public view override returns (uint) {
-        return balance[_a];  
+cona];  
     function balanceOf(address _a) external view returns (uint);
 
      function balanceOf(address _a) public view override returns (uint) {
@@ -33,7 +29,11 @@ contract TokenCorrect is Token {
         balance[msg.sender] -= _amt;
  TokenCorrect t = TokenCorrect(_token);  
         balance[_to] += _amt;
-    }
+    }tract TokenCorrect is Token {
+    mapping (address => uint) balance;
+    constructor(address _a, uint _b) {
+    function balanceOf(address _a) public view override returns (uint) {
+        return balance[_
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.8.0
         t.transfer(_to, _amt);
