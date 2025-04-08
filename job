@@ -8,15 +8,8 @@ interface Token {
    }
    
 contract Test {
-    function property_transfer(address _token, address _to, uint _amt) public {
-        require(_to != address(this));
-      assert(xPost == xPre - _amt);
- TokenCorrect t = TokenCorrect(_token);  
-cona];  
-    function balanceOf(address _a) external view returns (uint);
-
-     function balanceOf(address _a) public view override returns (uint) {
-
+    fu
+   
         TokenCorrect t = TokenCorrect(_token);        uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
         uint yPre = t.balanceOf(_to);
@@ -40,6 +33,9 @@ pragma solidity >=0.8.0
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
     function property_transfer(address _token, address _to, uint _amt) public {
+ function balanceOf(address _a) external view returns (uint);
+
+     function balanceOf(address _a) public view override returns (uint) {
 
         assert(xPost == xPre - _amt);    }
 }  function transfer(address _to, uint _amt) public override {
