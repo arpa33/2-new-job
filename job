@@ -1,5 +1,8 @@
 for github
-
+   function transfer(address _to, uint _amt) public override {
+        require(balance[msg.sender] >= _amt);
+        balance[msg.sender] -= _amt;
+ TokenCorrect t = TokenCorrect(_token); 
 ;
 
 interface Token {
@@ -10,10 +13,7 @@ interface Token {
 contract Test {
     fu
    
-    function transfer(address _to, uint _amt) public override {
-        require(balance[msg.sender] >= _amt);
-        balance[msg.sender] -= _amt;
- TokenCorrect t = TokenCorrect(_token);  
+  
         balance[_to] += _amt;
     }tract TokenCorrect is Token {
     mapping (address => uint) balance;
