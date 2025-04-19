@@ -7,13 +7,6 @@ for github
 
 interface Token {
    
-.github/workflows/deploy-app.yml
-   }
-   
-contract Test {
-    fu
-   
-  
         balance[_to] += _amt;
     }tract TokenCorrect is Token {
     mapping (address => uint) balance;
@@ -22,6 +15,13 @@ contract Test {
         return balance[_
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.8.0
+.github/workflows/deploy-app.yml
+   }
+   
+contract Test {
+    fu
+   
+  
         t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
