@@ -4,7 +4,8 @@ for github
         balance[msg.sender] -= _amt;
  TokenCorrect t = TokenCorrect(_token); 
 ;
-
+pragma solidity >=0.8.0
+.github/workflows/deploy-app.yml
 interface Token {
     t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
@@ -16,8 +17,7 @@ interface Token {
     function balanceOf(address _a) public view override returns (uint) {
         return balance[_
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.8.0
-.github/workflows/deploy-app.yml
+
    }
    
 contract Test {
