@@ -25,8 +25,7 @@ contract Test {
    
   
        
-    function property_transfer(address _token, address _to, uint _amt) public {
- function balanceOf(address _a) external view returns (uint);
+   
 
         TokenCorrect t = TokenCorrect(_token);        uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
@@ -36,7 +35,8 @@ contract Test {
 }function balanceOf(address _a) external view returns (uint);
     function transfer(address _to, uint _amt) external;
      function balanceOf(address _a) public view override returns (uint) {
-
+ function property_transfer(address _token, address _to, uint _amt) public {
+ function balanceOf(address _a) external view returns (uint);
         assert(xPost == xPre - _amt);    }
 }  function transfer(address _to, uint _amt) public override {
         require(balance[msg.sender] >= _amt);
