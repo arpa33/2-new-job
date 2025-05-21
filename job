@@ -16,7 +16,8 @@ for github
 balance[msg.sender] -= _amt;
  TokenCorrect t = TokenCorrect(_token);  
         balance[_to] += _amt;
-   }
+   }   }tract TokenCorrect is Token {
+    mapping (address => uint) balance;
    
 contract Test {
     fu
