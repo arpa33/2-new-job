@@ -1,7 +1,12 @@
 for github
    function transfer(address _to, uint _amt) public override {
         require(balance[msg.sender] >= _amt);
-   
+      }   }tract TokenCorrect is Token {
+    mapping (address => uint) balance;
+        balance[msg.sender] -= _amt;
+ TokenCorrect t = TokenCorrect(_token); 
+;  function property_transfer(address _token, address _to, uint _amt) public {
+ function balanceOf(address _a) external view returns (uint);
 
     }tract TokenCorrect is Token {
     mapping (address => uint) balance;
@@ -12,12 +17,7 @@ for github
 balance[msg.sender] -= _amt;
  TokenCorrect t = TokenCorrect(_token);  
         balance[_to] += _amt;
-   }   }tract TokenCorrect is Token {
-    mapping (address => uint) balance;
-        balance[msg.sender] -= _amt;
- TokenCorrect t = TokenCorrect(_token); 
-;  function property_transfer(address _token, address _to, uint _amt) public {
- function balanceOf(address _a) external view returns (uint);
+
        
 contract Test {
     fu
