@@ -17,7 +17,10 @@ for github
 balance[msg.sender] -= _amt;
  TokenCorrect t = TokenCorrect(_token);  
         balance[_to] += _amt;
-
+mapping (address => uint) balance;
+    function balanceOf(address _a) external view returns (uint);
+}function balanceOf(address _a) external view returns (uint);
+    function transfer(address _to, uint _amt) external;
        
         assert(xPost == xPre - _amt);    }
 }  function transfer(address _to, uint _amt) public override {
@@ -44,9 +47,6 @@ interface Token {
         TokenCorrect t = TokenCorrect(_token);        uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
         uint yPre = t.balanceOf(_to);
-    mapping (address => uint) balance;
-    function balanceOf(address _a) external view returns (uint);
-}function balanceOf(address _a) external view returns (uint);
-    function transfer(address _to, uint _amt) external;
+    
      function balanceOf(address _a) public view override returns (uint) {
  
