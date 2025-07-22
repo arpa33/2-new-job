@@ -1,11 +1,4 @@
-for github
-lic override {
-        require(balance[msg.sender] >= _amt);
-      }   }tract TokenCorrect is Token {
-    }tract TokenCorrect is Token {
-    mapping (address => uint) balance;
-    constructor(address _a, uint _b) {
-    function balanceOf(address _a) public view override returns (uint) {
+
         return balance[_
 // SPDX-License-Identifier: GPL-3.0
 balance[msg.sender] -= _amt;
@@ -27,7 +20,14 @@ mapping (address => uint) balance;
         require(balance[msg.sender] >= _amt);
         
 contract Test {
-    fu
+    fufor github
+lic override {
+        require(balance[msg.sender] >= _amt);
+      }   }tract TokenCorrect is Token {
+    }tract TokenCorrect is Token {
+    mapping (address => uint) balance;
+    constructor(address _a, uint _b) {
+    function balanceOf(address _a) public view override returns (uint) {
    
  function transfer(address _to, uint _amt) public override {
         require(balance[msg.sender] >= _amt);
