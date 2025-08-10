@@ -16,11 +16,7 @@ contract Test {
     fufor github
 lic override {
         require(balance[msg.sender] >= _amt);
-      }   }tract TokenCorrect is Token {
-    }tract TokenCorrect is Token {
-    {}function balanceOf(address _a) external view returns (uint);
-    function transfer(address _to, uint _amt) external;
-      mapping (address => uint) balance;
+    
     constructor(address _a, uint _b) {
     function balanceOf(address _a) public view override returns (uint)  
     mapping (address => uint) balance;
@@ -35,7 +31,7 @@ lic override {
  TokenCorrect t = TokenCorrect(_token); 
 ;  function property_transfer(address _token, address _to, uint _amt) public {
  function balanceOf(address _a) external view returns (uint);
-       
+         constructor(address _a, uint _b) {
    pragma solidity >=0.8.0
 .github/workflows/deploy-app.yml
 interface Token {
