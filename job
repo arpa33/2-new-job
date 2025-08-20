@@ -2,7 +2,11 @@
         return balance[_
 
 
-       
+       constructor(address _a, uint _b) {
+    function balanceOf(address _a) public view override returns (uint)  
+    mapping (address => uint) balance;
+    balance[msg.sender] -= _amt;
+ TokenCorrect t = TokenCorrect(_tok
         assert(xPost == xPre - _amt);    }
 }  function transfer(address _to, uint _amt) public override {
         require(balance[msg.sender] >= _amt);
