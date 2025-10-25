@@ -3,11 +3,7 @@
  
 
  
- TokenCorrect t = TokenCorrect(_tok
-    constructor(address _a, uint _b) {
-    function balanceOf(address _a) public view override returns (uint)  
-    mapping (address => uint) balance;
- function transfer(address _to, uint _amt) public override {
+ic override {
 mapping (address => uint) balance;
     function balanceOf(address _a) external view returns (uint);
 
@@ -26,7 +22,11 @@ balance[msg.sender] -= _amt;
 function transfer(address _to, uint _amt) public override {
 mapping (address => uint) balance;
     function balanceOf(address _a) external view returns (uint);
-contract Test {
+contract Test { TokenCorrect t = TokenCorrect(_tok
+    constructor(address _a, uint _b) {
+    function balanceOf(address _a) public view override returns (uint)  
+    mapping (address => uint) balance;
+ function transfer(address _to, uint _amt) publ
     fufor github
 lic override { return balance[_
        balance[msg.sender] -= _amt;
