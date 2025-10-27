@@ -3,9 +3,6 @@
  
 
  
-ic override {
-mapping (address => uint) balance;
-    function balanceOf(address _a) external view returns (uint);
 
    pragma solidity >=0.8.0
 .github/workflows/deploy-app.yml
@@ -44,7 +41,10 @@ lic override { return balance[_
         TokenCorrect t = TokenCorrect(_token);        uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
         uint yPre = t.balanceOf(_to);
-    
+    ic override {
+mapping (address => uint) balance;
+    function balanceOf(address _a) external view returns (uint);
+
      function balanceOf(address _a) public view override returns (uint) {
  contract Test {
         require(balance[msg.sender] >= _amt);
