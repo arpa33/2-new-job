@@ -1,14 +1,14 @@
 
-       
- 
-
- 
-
-   pragma solidity >=0.8.0
+     pragma solidity >=0.8.0
 .github/workflows/deploy-app.yml
 re - _amt);    }
 }  function transfer(address _to, uint _amt) public override {
-        require(balance[msg.sender] >= _amt);
+        require(balance[msg.sender] >= _amt);     
+ 
+
+ 
+
+
         // SPDX-License-Identifier: GPL-3.0
 balance[msg.sender] -= _amt;
  TokenCorrect t = TokenCorrect(_token);  
