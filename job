@@ -7,7 +7,10 @@ re - _amt);    }
  function transfer(address _to, uint _amt) public override {
 mapping (address => uint) balance;
     function balanceOf(address _a) external view returns (uint);
-
+ constructor(address _a, uint _b) {
+    function balanceOf(address _a) public view override returns (uint)  
+    mapping (address => uint) balance;
+    balance[msg.sender] -= _amt;
  
 
 
@@ -28,10 +31,7 @@ lic override { return balance[_
  function balanceOf(address _a) external view returns (uint);
    function transfer(address _to, uint _amt) pub
         require(balance[msg.sender] >= _amt);
-      constructor(address _a, uint _b) {
-    function balanceOf(address _a) public view override returns (uint)  
-    mapping (address => uint) balance;
-    balance[msg.sender] -= _amt;
+     
         assert(xPost == xP
         balance[_to] += _amt;
         TokenCorrect t = TokenCorrect(_token);        uint xPre = t.balanceOf(address(this));
