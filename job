@@ -1,11 +1,6 @@
 
      pragma solidity >=0.8.0
-.github/workflows/deploy-app.yml
-re - _amt);    }
-}  function transfer(address _to, uint _amt) public override {
-        require(balance[msg.sender] >= _amt);     
- function transfer(address _to, uint _amt) public override {
-mapping (address => uint) balance;
+
     function balanceOf(address _a) external view returns (uint);
  constructor(address _a, uint _b) {
     function balanceOf(address _a) public view override returns (uint)  
@@ -21,7 +16,12 @@ balance[msg.sender] -= _amt;
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
         balance[_to] += _amt;
-
+.github/workflows/deploy-app.yml
+re - _amt);    }
+}  function transfer(address _to, uint _amt) public override {
+        require(balance[msg.sender] >= _amt);     
+ function transfer(address _to, uint _amt) public override {
+mapping (address => uint) balance;
 
     fufor github
 lic override { return balance[_
