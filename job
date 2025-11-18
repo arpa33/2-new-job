@@ -1,63 +1,22 @@
+#include <Servo.h>
 
-     pragma solidity >=0.8.0
+Servo doorServo;
+int servoPin = 13;
+int touchPad = T0; // Touch pin 0 on ESP32
 
-    function balanceOf(address _a) external view returns (uint);
- constructor(address _a, uint _b) {
-    function balanceOf(address _a) public view override returns (uint)  
-    mapping (address => uint) balance;
-    balance[msg.sender] -= _amt;
- 
+void setup() {
+  Serial.begin(115200);
+  doorServo.attach(servoPin);
+  doorServo.write(0);
+}
 
+void loop() {
+  int touchValue = touchRead(touchPad);
 
-        // SPDX-License-Identifier: GPL-3.0
-balance[msg.sender] -= _amt;
- TokenCorrect t = TokenCorrect(_token);  
-    t.transfer(_to, _amt);
-        uint xPost = t.balanceOf(address(this));
-        uint yPost = t.balanceOf(_to);
-        balance[_to] += _amt;
-.github/workflows/deploy-app.yml
-re - _amt);    }
-}  function transfer(address _to, uint _amt) public override {
-        require(balance[msg.sender] >= _amt);     
- function transfer(address _to, uint _amt) public override {
-mapping (address => uint) balance;
-
-        // SPDX-License-Identifier: GPL-3.0
-balance[msg.sender] -= _amt;
- TokenCorrect t = TokenCorrect(_token);  
-    t.transfer(_to, _amt);
-        uint xPost = t.balanceOf(address(this));
-        uint yPost = t.balanceOf(_to);
-        balance[_to] += _amt;
-.github/workflows/deploy-app.yml
-    fufor github
-lic override { return balance[_
-       balance[msg.sender] -= _amt;
- TokenCorrect t = TokenCorrect(_token); 
-;  function property_transfer(address _token, address _to, uint _amt) public {
- function balanceOf(address _a) external view returns (uint);
-   function transfer(address _to, uint _amt) pub
-        require(balance[msg.sender] >= _amt);
-     
-        assert(xPost == xP
-        balance[_to] += _amt;
-        TokenCorrect t = TokenCorrect(_token);        uint xPre = t.balanceOf(address(this));
-        require(xPre >= _amt);
-        uint yPre = t.balanceOf(_to);
-    ic override {
-mapping (address => uint) balance;
-    function balanceOf(address _a) external view returns (uint);
-contract Test { TokenCorrect t = TokenCorrect(_tok
-    constructor(address _a, uint _b) {
-    function balanceOf(address _a) public view override returns (uint)  
-    mapping (address => uint) balance;
- function transfer(address _to, uint _amt) publ
-     function balanceOf(address _a) public view override returns (uint) {
- contract Test {
-        require(balance[msg.sender] >= _amt);
-        balance[msg.sender] -= _amt;
- TokenCorrect t = TokenCorrect(_token); 
-;  function property_transfer(address _token, address _to, uint _amt) public {
- function balanceOf(address _a) external view returns (uint);
-         constructor(address _a, uint _b) {
+  if (touchValue < 25) { // Low value = touched
+    doorServo.write(90);
+    delay(1500);
+    doorServo.write(0);
+    delay(500);
+  }
+}
