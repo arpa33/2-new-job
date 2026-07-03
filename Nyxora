@@ -1,0 +1,35 @@
+# Nyxora
+
+Nyxora is a modern open-source project focused on performance, simplicity, and scalability.
+
+## Features
+- Clean and modular architecture
+- Fast and lightweight
+- Easy integration
+- Cross-platform support
+- Well-documented API
+
+## Installation
+
+```bash
+git clone https://github.com/your-username/nyxora.git
+cd nyxora
+import psutil
+import time
+from datetime import datetime
+
+def display_stats():
+    print("=" * 50)
+    print(f"CodePulse - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("=" * 50)
+
+    print(f"CPU Usage    : {psutil.cpu_percent(interval=1)}%")
+    print(f"Memory Usage : {psutil.virtual_memory().percent}%")
+    print(f"Disk Usage   : {psutil.disk_usage('/').percent}%")
+    print(f"Boot Time    : {datetime.fromtimestamp(psutil.boot_time())}")
+
+if __name__ == "__main__":
+    while True:
+        display_stats()
+        print()
+        time.sleep(2)
